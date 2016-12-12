@@ -1,13 +1,13 @@
 WCC-Component-Archetype
 =======================
 
-This is a maven Archetype designed to make spinning up new components for 
-Oracle WebCenter Content (WCC) faster an easier.
+This is a Maven Archetype designed to make spinning up new components for 
+Oracle WebCenter Content (WCC) faster and easier.
 
 It creates a basic repository layout, `pom.xml` file and common template files.
 Eliminating the need to use ComponentWizard to create basic components.
 
-**Note** this generates maven projects that use
+**Note** This generates maven projects that use
 
 ```xml
 <depencency>
@@ -16,7 +16,7 @@ Eliminating the need to use ComponentWizard to create basic components.
 </dependency>
 ```
 
-Which means it also assumes you're using the same maven coordinates for it's Depencencies.  
+Which means it also assumes the `ucm-maven-plugin` dependencies are available at the same maven coordinates.
 
 ```xml
 <dependency>
