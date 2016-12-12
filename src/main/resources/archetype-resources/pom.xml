@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>${groupId}</groupId>
+  <artifactId>${artifactId}</artifactId>
+  <version>${version}</version>
+  <packaging>wcc</packaging>
+  
+  <!-- TODO project name -->
+  <name>quickstart</name>
+  <description></description>
+
+  <dependencies>
+    
+    <dependency>
+      <groupId>com.oracle.wcc</groupId>
+      <artifactId>idcserver</artifactId>
+      <version>11.1.1</version>
+      <scope>provided</scope>
+    </dependency>
+  
+    <!-- Unit Testing -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+  <build>
+     <plugins>
+      <!-- Github Maven Plugin for building a WCC Component .zip -->
+	   <plugin>
+		  <groupId>org.ucmtwine</groupId>
+		  <artifactId>ucm-maven-plugin</artifactId>
+		  <version>0.0.6-SNAPSHOT</version>
+
+        <extensions>true</extensions> <!-- Allows WCC packaging type -->
+        <configuration>
+			 <!-- Configuration for AutoMagic Deploy -->
+		    <servers>
+		      <server>
+		        <id>dev</id>
+		        <url>http://dev.host.name/cs/idcplg</url>
+		        <username>sysadmin</username>
+		        <password>idc</password>
+		      </server>
+		      <server>
+		        <id>test</id>
+		        <url>http://test.host.name/cs/idcplg</url>
+		        <username>weblogic</username>
+		        <password>weblogic1</password>
+		      </server>
+		    </servers>
+        </configuration>
+		</plugin>
+     </plugins>
+  </build>
+    
+</project>

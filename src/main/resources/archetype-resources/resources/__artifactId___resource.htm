@@ -1,0 +1,25 @@
+﻿<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>${artifactId} htmlIncludeOrString</title>
+  </head>
+  <body>
+
+    <@dynamichtml std_page_begin@>
+      <$include std_main_page_begin$>
+      <h1>Hello from ${artifactId} Component! Overriden resource.</h1>
+    <@end@>
+    
+    <@table ${artifactId}_ServiceHandlers@>
+    <table border=1>
+      <tr>
+    	  <td>serviceName</td><td>handler</td><td>searchOrder</td>
+    	</tr>
+      <tr>
+    	  <td>MyserviceName</td><td>Myhandler</td><td>MysearchOrder</td>
+    	</tr>
+    </table>
+    <@end@>
+  
+  </body>
+</html>

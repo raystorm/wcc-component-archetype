@@ -1,0 +1,64 @@
+﻿<?hda version="11.1.1.8.0PSU-2015-01-08 07:49:21Z-r123144" jcharset="UTF8" encoding="utf-8"?>
+@Properties LocalData
+ComponentName=${artifactId}
+blDateFormat=M/d{/yy}{ h:mm[:ss]{ a}}!mAM,PM!tAmerica/New_York
+installID=${artifactId}
+classpath=
+classpathorder=0
+hasPreferenceData=0
+libpath=$COMPONENT_DIR/lib
+libpathorder=0
+preventAdditionalComponentDowngrade=0
+version=${version}
+@end
+@ResultSet ClassAliases
+3
+classname
+location
+loadOrder
+@end
+@ResultSet Filters
+4
+type
+location
+parameter
+loadOrder
+@end
+@ResultSet ResourceDefinition
+4
+type
+filename
+tables
+loadOrder
+resource
+resources/${artifactId}_resource.htm
+null
+10
+template
+templates/${artifactId}_template.hda
+null
+10
+service
+resources/${artifactId}_service.htm
+${artifactId}_Services
+10
+query
+resources/${artifactId}_query.htm
+${artifactId}_Queries
+10
+environment
+${artifactId}_environment.cfg
+null
+10
+@end
+@ResultSet MergeRules
+4
+fromTable
+toTable
+column
+loadOrder
+${artifactId}_Templates
+IntradocTemplates
+name
+10
+@end

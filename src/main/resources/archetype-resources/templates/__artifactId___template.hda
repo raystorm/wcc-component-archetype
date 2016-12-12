@@ -1,0 +1,12 @@
+﻿<?hda version="11.1.1.8.0PSU-2015-01-08 07:49:21Z-r123144" jcharset="UTF8" encoding="utf-8"?>
+@Properties LocalData
+blDateFormat=M/d{/yy}{ h:mm[:ss]{ a}}!mAM,PM!tAmerica/New_York
+@end
+@ResultSet ${artifactId}_Templates
+5
+name
+class
+formtype
+filename
+description
+@end

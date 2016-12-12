@@ -1,0 +1,23 @@
+﻿<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>${artifactId} query</title>
+  </head>
+  <body>
+
+    <@table ${artifactId}_Queries@>
+    <table border=1>
+      <caption><strong>Query Definition Table</strong></caption>
+      <tr>
+        <td>name</td><td>queryStr</td><td>parameters</td>
+      </tr>
+      <tr>
+        <td>QSelectdID</td>
+        <td>SELECT dID FROM revisions WHERE dDocName = ? and dRevRank = 0</td>
+        <td>dDocName varchar</td>
+      </tr>
+    </table>
+    <@end@>
+    
+  </body>
+</html>
