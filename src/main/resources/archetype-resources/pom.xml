@@ -36,7 +36,7 @@
 	   <plugin>
 		  <groupId>org.ucmtwine</groupId>
 		  <artifactId>ucm-maven-plugin</artifactId>
-		  <version>0.0.6-SNAPSHOT</version>
+		  <version>0.0.8</version>
 
         <extensions>true</extensions> <!-- Allows WCC packaging type -->
         <configuration>
