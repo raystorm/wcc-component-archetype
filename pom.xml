@@ -5,10 +5,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.raystorm</groupId>
   <artifactId>wcc-component-archetype</artifactId>
-  <version>0.1.0</version>
-	<packaging>maven-archetype</packaging>
+  <version>0.1.1</version>
+  <packaging>maven-archetype</packaging>
+  
   <name>Archetype - wcc-component-archetype</name>
-  <url>http://maven.apache.org</url>
+  <description>
+    Maven Archetype for quickly starting new Maven WCC Component projects.
+  </description>
+  <url>https://github.com/raystorm/wcc-component-archetype</url>
   
 	<build>
 		<extensions>

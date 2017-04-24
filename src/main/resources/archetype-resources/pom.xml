@@ -8,8 +8,8 @@
   <version>${version}</version>
   <packaging>wcc</packaging>
   
-  <!-- TODO project name -->
-  <name>quickstart</name>
+  <!-- TODO project name and description -->
+  <name>${artifactId}</name>
   <description></description>
 
   <dependencies>
@@ -36,7 +36,7 @@
 	   <plugin>
 		  <groupId>org.ucmtwine</groupId>
 		  <artifactId>ucm-maven-plugin</artifactId>
-		  <version>0.0.8</version>
+		  <version>0.1.0</version>
 
         <extensions>true</extensions> <!-- Allows WCC packaging type -->
         <configuration>
