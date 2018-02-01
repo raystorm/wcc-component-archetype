@@ -7,7 +7,7 @@ Oracle WebCenter Content (WCC) faster and easier.
 It creates a basic repository layout, `pom.xml` file and common template files.
 Eliminating the need to use ComponentWizard to create basic components.
 
-**Note** This generates maven projects that use
+**Note** This generates Maven projects that use
 
 ```xml
 <depencency>
@@ -16,7 +16,7 @@ Eliminating the need to use ComponentWizard to create basic components.
 </dependency>
 ```
 
-Which means it also assumes the `ucm-maven-plugin` dependencies are available at the same maven coordinates.
+Which means it also assumes the [ucm-maven-plugin](https://github.com/raystorm/ucm-maven-plugin) dependencies (as seen below) are available at the same Maven coordinates.
 
 ```xml
 <dependency>
@@ -24,11 +24,6 @@ Which means it also assumes the `ucm-maven-plugin` dependencies are available at
   <artifactId>idcserver</artifactId>
   <version>11.1.1</version>
   <scope>provided</scope>
-</dependency>
-<dependency>
-  <groupId>com.oracle.wcc</groupId>
-  <artifactId>ridc</artifactId>
-  <version>[11.1.1,12.0.0.0)</version>
 </dependency>
 <dependency>
   <groupId>com.oracle.weblogic</groupId>
